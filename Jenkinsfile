@@ -19,7 +19,7 @@ pipeline {
 
         stage('Allure Report') {
             steps {
-                allure results: [[path: 'allure-results']], disableIfNoTestResult: true
+                allure results: [[path: 'allure-results']]
             }
         }
     }
