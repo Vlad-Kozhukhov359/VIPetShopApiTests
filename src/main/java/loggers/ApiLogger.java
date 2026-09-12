@@ -30,9 +30,9 @@ public class ApiLogger implements OrderedFilter {
     }
 
     private void logRequest(FilterableRequestSpecification requestSpec) {
-        logger.info("╔══════════════════════════════════════════════════════════════════════════════╗");
-        logger.info("║                              REQUEST                                        ║");
-        logger.info("╚══════════════════════════════════════════════════════════════════════════════╝");
+        logger.info("==============================================================================");
+        logger.info("                              REQUEST");
+        logger.info("==============================================================================");
         logger.info("");
         logger.info("Method: {}", requestSpec.getMethod());
         logger.info("URI:    {}", requestSpec.getURI());
@@ -50,9 +50,9 @@ public class ApiLogger implements OrderedFilter {
 
     private void logResponse(Response response) {
         logger.info("");
-        logger.info("╔══════════════════════════════════════════════════════════════════════════════╗");
-        logger.info("║                              RESPONSE                                       ║");
-        logger.info("╚══════════════════════════════════════════════════════════════════════════════╝");
+        logger.info("==============================================================================");
+        logger.info("                              RESPONSE");
+        logger.info("==============================================================================");
         logger.info("");
         logger.info("Status Code: {}", response.getStatusCode());
         logger.info("Status Line: {}", response.getStatusLine());
