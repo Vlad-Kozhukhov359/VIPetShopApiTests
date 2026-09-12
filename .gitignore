@@ -12,7 +12,6 @@ logs/
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
@@ -29,6 +28,13 @@ replay_pid*
 build/
 !gradle-wrapper.jar
 
+# Gradle wrapper distribution
+wrapper/
+caches/
+daemon/
+.tmp/
+native/
+
 # IDE
 .idea
 *.iml
@@ -41,4 +47,4 @@ Thumbs.db
 
 # Allure
 allure-results/
-allure-report/
+allure-report/
