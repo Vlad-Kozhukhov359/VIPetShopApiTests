@@ -29,6 +29,7 @@ build/
 !gradle-wrapper.jar
 
 # Gradle wrapper distribution
+wrapper/
 caches/
 daemon/
 .tmp/

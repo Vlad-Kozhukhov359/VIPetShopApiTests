@@ -6,6 +6,7 @@ import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.when;
 
 public class TestDeleteNonexistentPet extends BaseApiTest {
@@ -19,7 +20,9 @@ public class TestDeleteNonexistentPet extends BaseApiTest {
     @Test
     @DisplayName("Удаление несуществующего питомца")
     public void testDeleteNonexistentPet() {
-        Response response = deletePet(9999);
-        PetApiAssertions.assertPetDeleted(response);
+        step("Проверка удаления несуществующего питомца", () -> {
+            Response response = deletePet(9999);
+            PetApiAssertions.assertPetDeleted(response);
+        });
     }
 }
