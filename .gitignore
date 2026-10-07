@@ -48,3 +48,6 @@ Thumbs.db
 # Allure
 allure-results/
 allure-report/
+
+# AI Assistant Rules
+.cascade-rules
